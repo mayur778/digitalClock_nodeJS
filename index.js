@@ -3,7 +3,7 @@ const fs = require("fs");
 const requests = require("requests");
 const { requested } = require("requests/requested");
 
-const indexFile = fs.readFileSync("index.html", "utf-8");
+const indexFile = fs.readFileSync("front/index.html", "utf-8");
 
 const server = http.createServer((req, res) => {
     res.end(indexFile);
